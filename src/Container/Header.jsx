@@ -2,13 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Header() {
-
   return (
     <nav className="flex relative items-center border-solid border-b-4">
       <div>
         <img className="ml-3" src="https://delorean.im/core/img/imlogo.png" alt="Workflow" />
       </div>
-
 
       <div className="w-full">
         <div className="relative flex items-center justify-between h-16">
@@ -35,12 +33,12 @@ function Header() {
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <div className="ml-3 relative flex items-center">
-              <i className="fa fa-question-circle ml-2" style={{ fontSize: "25px" }} aria-hidden="true" />
-              <i className="fa fa-calculator ml-2" style={{ fontSize: "25px" }} aria-hidden="true" />
-              <i className="fas fa-bell ml-2" style={{ fontSize: "25px" }} />
-              <i className="fas fa-ellipsis-v ml-2" style={{ fontSize: "25px" }} />
-              <i className="fas fa-sign-out-alt ml-2" style={{ fontSize: "25px" }} />
-              <div className="mx-2 flex items-center">
+              <i className="fa fa-question-circle ml-3" style={{ fontSize: "25px" }} aria-hidden="true" />
+              <i className="fa fa-calculator ml-3" style={{ fontSize: "25px" }} aria-hidden="true" />
+              <i className="fas fa-bell ml-3" style={{ fontSize: "25px" }} />
+              <i className="fas fa-ellipsis-v ml-3" style={{ fontSize: "25px" }} />
+              <i className="fas fa-sign-out-alt ml-3" style={{ fontSize: "25px" }} />
+              <div className="mx-2 ml-3 flex items-center">
                 <button className="bg-gray-800 text-sm rounded-full" id="user-menu" aria-haspopup="true">
                   <img
                     className="h-8 w-8 rounded-full"
@@ -48,27 +46,26 @@ function Header() {
                     alt=""
                   />
                 </button>
-                <span className="ml-1">User Name</span>
+                <span className="ml-2">User Name</span>
               </div>
             </div>
           </div>
         </div>
-        <div className="bg-gray-200 mx-3 mb-3 px-5 relative flex items-center justify-between h-14">
+        <div className="bg-gray-200 mx-3 mb-3 px-5 relative flex items-center justify-between">
           <div>
             <h1 className="logo-Font">Delorean</h1>
           </div>
           <div>
-            <img src="https://delorean.im/core/img/imacademylogo.png" alt="no " />
+            <img src="https://delorean.im/core/img/imacademylogo.png" alt="no" />
           </div>
           <div className="flex items-center ">
             <span>go</span>
             <strong>LIVE</strong>
-            <img className="ml-2" src="https://delorean.im/core/img/wanew-headervideos.png" alt="no " />
+            {/* <img className="ml-2" src="https://delorean.im/core/img/wanew-headervideos.png" alt="no" /> */}
           </div>
         </div>
       </div>
     </nav>
-
   );
 }
 

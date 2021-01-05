@@ -11,11 +11,11 @@ function RightSidebar() {
           </button>
         </div>
         <div className="m-3 mt-7">
-          {data.map((item) => (
-            <div className="alert-item font">
+          {data.map((item, index) => (
+            <div key={index} className="alert-item font">
               EURCAD
               <span className="timeframe">
-                (15M)
+                ({item}M)
                 <br />
                 Called At (Price): 1.5628
                 <br />
