@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.side-menu-left {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  height: 100%;
+}
+
+.side-menu-right {
+  position: absolute;
+  right: 0;
+  top: 1px;
+  height: 100%;
+  /*background-color: coral;*/
+  width: 320px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#tray {
+  border-right: 2px solid #d9dadb;
+}
+
+.tray-products > img {
+  border-radius: 3px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+#tray .section-1 {
+  padding: 5px;
+}
+
+#tray .section-2 {
+  padding: 5px;
+}
+
+.drawingToolbar {
+  display: flex;
+  border-right: 2px solid #d9dadb;
+  padding: 10px;
+}
+
+.alert-item {
+  margin-bottom: 10px;
+  border-left: 3px solid gray;
+  padding-left: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 250px;
+  left: 45px;
+  z-index: 1;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  white-space: nowrap;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #fff;
+  cursor: default;
+  transition-property: none;
+  color: #4c525e;
+  transition: color 60ms ease;
+}
+.dropdown-item svg {
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.main-contant  {
+  margin-left: 115px;
+}
