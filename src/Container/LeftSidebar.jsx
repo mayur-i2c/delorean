@@ -1,23 +1,56 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import drawingToolbar from "../constant/drawingToolbar";
 
 const section2 = [
-  "https://delorean.im/core/img/BB.png",
-  "https://delorean.im/core/img/DL.png",
-  "https://delorean.im/core/img/GC.png",
-  "https://delorean.im/core/img/HS.png",
-  "https://delorean.im/core/img/LB.png",
-  "https://delorean.im/core/img/LV.png",
-  "https://delorean.im/core/img/SC.png",
-  "https://delorean.im/core/img/SD.png",
-  "https://delorean.im/core/img/ST.png",
+  {
+    img: "https://delorean.im/core/img/BB.png",
+    link: "http://bounceback.im/",
+  },
+  {
+    img: "https://delorean.im/core/img/DL.png",
+    link: "https://delorean.im/",
+  },
+  {
+    img: "https://delorean.im/core/img/GC.png",
+    link: "http://goldcup.im/",
+  },
+  {
+    img: "https://delorean.im/core/img/HS.png",
+    link: "http://harmonics.im/",
+  },
+  {
+    img: "https://delorean.im/core/img/LB.png",
+    link: "http://goliberty.im/",
+  },
+  {
+    img: "https://delorean.im/core/img/LV.png",
+    link: "http://levels.im/",
+  },
+  {
+    img: "https://delorean.im/core/img/PV.png",
+    link: "http://pivots.im/",
+  },
+  {
+    img: "https://delorean.im/core/img/SC.png",
+    link: "http://swipecoin.im/",
+  },
+  {
+    img: "https://delorean.im/core/img/SD.png",
+    link: "http://steady.im/",
+  },
+  {
+    img: "https://delorean.im/core/img/ST.png",
+    link: "http://swipetrades.im/",
+  },
 ];
 
 function LeftSidebar() {
   const openLink = (url) => {
     window.open(url, "_blank");
   };
+  
   return (
     <div className="side-menu-left">
       <div id="tray">
@@ -33,9 +66,9 @@ function LeftSidebar() {
           </Link>
         </div>
         <div className="section-2 tray-products flex items-center flex-col">
-          {section2.map((item) => (
-            <Link onClick={() => openLink("http://im.center")} className="tray-products">
-              <img src={item} />
+          {section2.map(({ img, link }) => (
+            <Link onClick={() => openLink(link)} className="tray-products">
+              <img src={img} />
             </Link>
           ))}
         </div>

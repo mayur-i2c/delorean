@@ -2,11 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Header() {
+
   return (
     <nav className="flex relative items-center border-solid border-b-4">
       <div>
         <img className="ml-3" src="https://delorean.im/core/img/imlogo.png" alt="Workflow" />
       </div>
+
+
       <div className="w-full">
         <div className="relative flex items-center justify-between h-16">
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
@@ -50,23 +53,22 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className="bg-gray-200 ml-2 px-5 relative flex items-center justify-between h-16">
+        <div className="bg-gray-200 mx-3 mb-3 px-5 relative flex items-center justify-between h-14">
           <div>
-            <h1 style={{ color: "#3e304e", fontSize: "30pt" }}>Delorean</h1>
+            <h1 className="logo-Font">Delorean</h1>
           </div>
           <div>
             <img src="https://delorean.im/core/img/imacademylogo.png" alt="no " />
           </div>
-          <div>
-            <a href="#">
-              <span>go</span>
-              <strong>LIVE</strong>
-              <img src="https://delorean.im/core/img/wanew-headervideos.png" alt="no " />
-            </a>
+          <div className="flex items-center ">
+            <span>go</span>
+            <strong>LIVE</strong>
+            <img className="ml-2" src="https://delorean.im/core/img/wanew-headervideos.png" alt="no " />
           </div>
         </div>
       </div>
     </nav>
+
   );
 }
 

@@ -28,6 +28,11 @@ code {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+.logo-Font {
+  color: rgb(62, 48, 78);
+  font-size: 30pt;
+}
+
 #tray {
   border-right: 2px solid #d9dadb;
 }
@@ -93,6 +98,26 @@ code {
   display: block;
 }
 
-.main-contant  {
+.main-contant {
   margin-left: 115px;
+}
+
+.alert-item.font {
+  font-size: 11pt;
+  color: #829391;
+}
+
+/* Use a media query to add a breakpoint at 620px For mobile phones: */
+@media only screen and (max-width: 640px) {
+  .side-menu-right {
+    margin-left: 115px;
+    position: relative;
+    width: 100%;
+  }
+  .logo-Font {
+    font-size: 20pt;
+  }
+  .alert-btn {
+    margin-left: -35%;
+  }
 }

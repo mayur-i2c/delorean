@@ -5,14 +5,14 @@ function RightSidebar() {
   return (
     <div className="side-menu-right overflow-auto">
       <div className="flex justify-center flex-col">
-        <div className="flex justify-center">
-          <button className="mt-2">
+        <div className="flex justify-center ">
+          <button className="mt-2 alert-btn">
             <img src="https://delorean.im/core/img/wanew-alertpanel.png" alt="" />
           </button>
         </div>
         <div className="m-3 mt-7">
           {data.map((item) => (
-            <div className="alert-item font-semibold">
+            <div className="alert-item font">
               EURCAD
               <span className="timeframe">
                 (15M)
