@@ -1,7 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Dropdown from "rc-dropdown";
+import Menu, { Item as MenuItem } from "rc-menu";
 
 import drawingToolbar from "../constant/drawingToolbar";
+
+function onSelect({ key }) {
+  console.log(`${key} selected`);
+}
+
+function onVisibleChange(visible) {
+  console.log(visible);
+}
 
 const section2 = [
   {
@@ -50,25 +60,25 @@ function LeftSidebar() {
   const openLink = (url) => {
     window.open(url, "_blank");
   };
-  
+
   return (
     <div className="side-menu-left">
       <div id="tray">
         <div className="section-1 tray-products flex items-center flex-col">
           <Link onClick={() => openLink("http://im.center")} to="">
-            <img src="https://delorean.im/core/img/academyNEW2.png"  alt=""/>
+            <img src="https://delorean.im/core/img/academyNEW2.png" alt="" />
           </Link>
           <Link onClick={() => openLink("http://im.center")} to="">
             <img src="https://delorean.im/core/img/piptalkNEW.png" alt="" />
           </Link>
           <Link onClick={() => openLink("http://im.center")} to="">
-            <img id="signal_Button" src="https://delorean.im/core/img/lightbulbTEST.png"  alt="" />
+            <img id="signal_Button" src="https://delorean.im/core/img/lightbulbTEST.png" alt="" />
           </Link>
         </div>
         <div className="section-2 tray-products flex items-center flex-col">
           {section2.map(({ img, link }) => (
             <Link onClick={() => openLink(link)} className="tray-products" to="">
-              <img src={img}  alt=""/>
+              <img src={img} alt="" />
             </Link>
           ))}
         </div>
@@ -76,18 +86,30 @@ function LeftSidebar() {
       <div className="drawingToolbar">
         <div className="drawingToolbar-inner flex items-center flex-col">
           {drawingToolbar.map(({ childMenu, icon }) => (
-            <div className="drawingToolbar-item dropdown m-0.5	my-1">
-              {icon}
-              <ul className="dropdown-content text-gray-700 pt-1">
-                {childMenu.map(({ icon, name }) => (
-                  <li className="dropdown-item">
-                    <div>
-                      {icon}
-                      <span>{name}</span>
-                    </div>
-                  </li>
-                ))}
-              </ul>
+            <div className="drawingToolbar-item dropdown m-0.5">
+              {childMenu.length ? (
+                <Dropdown
+                  trigger={["hover", "click"]}
+                  overlay={() => (
+                    <Menu className="dropdown-content text-gray-700 pt-1" onSelect={onSelect}>
+                      {childMenu.map(({ icon, name }) => (
+                        <MenuItem className="dropdown-item">
+                          <div>
+                            {icon}
+                            <span>{name}</span>
+                          </div>
+                        </MenuItem>
+                      ))}
+                    </Menu>
+                  )}
+                  animation="slide-up"
+                  onVisibleChange={onVisibleChange}
+                >
+                  {icon}
+                </Dropdown>
+              ) : (
+                icon
+              )}
             </div>
           ))}
         </div>

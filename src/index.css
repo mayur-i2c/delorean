@@ -1,184 +1,204 @@
 body {
-    margin: 0;
-    font-size: 1rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+  margin: 0;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .side-menu-left {
-    display: flex;
-    position: absolute;
-    left: 0;
-    top: 1px;
-    height: 100%;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  height: 100%;
 }
-.main-nav-container{
-    margin-left: 25px;
+.main-nav-container {
+  margin-left: 25px;
 }
-.main-nav{
-    height: 50px;
+.main-nav {
+  height: 50px;
 }
-.main-nav-link{
-    text-decoration: none;
-    padding: 5px 15px;
-    color: #000;
-    font-family: "Montserrat", serif;
-    text-transform: uppercase;
+.main-nav-link {
+  text-decoration: none;
+  padding: 5px 15px;
+  color: #000;
+  font-family: "Montserrat", serif;
+  text-transform: uppercase;
 }
-.main-nav-link:hover{
-    background: #ddd;
-    text-decoration: none;
-    color: inherit;
+.main-nav-link:hover {
+  background: #ddd;
+  text-decoration: none;
+  color: inherit;
 }
 .side-menu-right {
-    position: absolute;
-    right: 0;
-    top: 1px;
-    height: 100%;
-    background: white;
-    width: 320px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  position: absolute;
+  right: 0;
+  top: 1px;
+  height: 100%;
+  background: white;
+  width: 320px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .logo-Font {
-    font-family: 'Days One', sans-serif;
-    color: #3E304E;
-    font-size: 30pt;
-    left: 15px;
-    width: auto;
+  font-family: "Days One", sans-serif;
+  color: #3e304e;
+  font-size: 30pt;
+  left: 15px;
+  width: auto;
 }
 
 #tray {
-    border-right: 2px solid #d9dadb;
+  border-right: 2px solid #d9dadb;
 }
 
 .tray-products > img {
-    border-radius: 3px;
-    margin-bottom: 6px;
-    cursor: pointer;
+  border-radius: 3px;
+  margin-bottom: 6px;
+  cursor: pointer;
 }
 
 #tray .section-1 {
-    padding: 5px;
+  padding: 5px;
 }
 
 #tray .section-2 {
-    padding: 5px;
+  padding: 5px;
 }
 
 .drawingToolbar {
-    display: flex;
-    border-right: 2px solid #d9dadb;
-    padding: 10px;
+  display: flex;
+  border-right: 2px solid #d9dadb;
+  padding: 10px;
 }
 
 .alert-item {
-    margin-bottom: 10px;
-    border-left: 3px solid gray;
-    padding-left: 5px;
+  margin-bottom: 10px;
+  border-left: 3px solid gray;
+  padding-left: 5px;
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 250px;
-    left: 45px;
-    z-index: 1;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  /* position: absolute; */
+  min-width: 250px;
+  /* left: 15px; */
+  margin-left: 45px !important;
+  z-index: 1;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 .dropdown-item {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    white-space: nowrap;
-    padding: 10px;
-    font-size: 14px;
-    background-color: #fff;
-    cursor: default;
-    transition-property: none;
-    color: #4c525e;
-    transition: color 60ms ease;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  white-space: nowrap;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #fff;
+  cursor: default;
+  transition-property: none;
+  color: #4c525e;
+  /* transition: color 60ms ease; */
 }
 
 .dropdown-item svg {
-    display: inline-block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+  display: inline-block;
 }
 
 .main-contant {
-    margin-left: 115px;
+  margin-left: 115px;
 }
 
 .alert-item.font {
-    font-size: 11pt;
-    color: #829391;
+  font-size: 11pt;
+  color: #829391;
 }
-.img-navbar-center{
-    width: 300px;
+.img-navbar-center {
+  width: 300px;
 }
-.ml-15{
-    margin-left: 15px;
+.ml-15 {
+  margin-left: 15px;
 }
-.mr-15{
-    margin-right: 15px;
+.mr-15 {
+  margin-right: 15px;
 }
-.product-name-tm{
-    color: #7C7C7C;
-    font-size: 12pt;
-    right: -15px;
-    top: 10px;
-    position: absolute;
+.product-name-tm {
+  color: #7c7c7c;
+  font-size: 12pt;
+  right: -15px;
+  top: 10px;
+  position: absolute;
 }
 
-/* Use a media query to add a breakpoint at 620px For mobile phones: */
-@media only screen and (max-width: 640px) {
-    .logo-Font {
-        font-size: 20pt;
-    }
-
-    .app-banner {
-        flex-direction: column;
-        margin-left: 2em !important;
-        min-height: 130px;
-    }
-
-    .dashboard-img {
-        width: 100%;
-    }
-
-    .font-username {
-        font-size: 9px;
-    }
-}
+/* Use a media query to add a breakpoint at 768px For mobile phones: */
 @media only screen and (max-width: 768px) {
-    .btn-menu-toggle {
-        position: absolute;
-        top: 1px;
-        right: 1px;
-        z-index: 99;
-    }
+  .logo-Font {
+    font-size: 20pt;
+  }
 
-    .navbar-collapse {
-        flex-basis: auto;
-        flex-grow: inherit;
-    }
+  .app-banner {
+    flex-direction: column;
+    margin-left: 2em !important;
+    min-height: 130px;
+  }
+
+  .dashboard-img {
+    width: 100%;
+  }
+
+  .font-username {
+    font-size: 9px;
+  }
+  .btn-menu-toggle {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    z-index: 99;
+  }
+
+  .navbar-collapse {
+    flex-basis: auto;
+    flex-grow: inherit;
+  }
+  .main-contant {
+    margin-top: 20px;
+  }
+}
+
+.navBar-dropdown-btn {
+  display: block;
+  text-decoration: none;
+  padding: 5px 15px;
+  color: #000;
+  font-family: "Montserrat";
+}
+.navBar-dropdown-btn:hover {
+  background: #ddd;
+}
+.navBar-dropdown-item {
+  background: #ddd !important;
+  color: #000 !important;
+  width: 320px !important;
+  padding: 8px 15px !important;
+  font-family: "Montserrat" !important;
+  font-size: 11pt !important;
+}
+.navBar-dropdown-item:hover {
+  background-color: #00af9b !important;
+  color: #000 !important;
 }

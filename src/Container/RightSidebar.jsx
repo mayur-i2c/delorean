@@ -1,50 +1,52 @@
-import React from 'react';
+import React from "react";
 
-function RightSidebar () {
-    const data = [1, 2, 3];
-    return (
-        <div className="navbar-expand-lg">
-            <button className="navbar-toggler btn-menu-toggle" type="button"
-                    data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                    aria-controls="navbarTogglerDemo01" aria-expanded="false">
-                <i className="fa fa-bars" aria-hidden="true"></i>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <div className="side-menu-right overflow-auto">
-                    <div className="flex bg-white justify-center flex-col">
-                        <div className="flex justify-center ">
-                            <button className="mt-2 alert-btn">
-                                <img
-                                    src="https://delorean.im/core/img/wanew-alertpanel.png"
-                                    alt=""/>
-                            </button>
-                        </div>
-                        <div className="m-3 mt-7">
-                            {data.map((item, index) => (
-                                <div key={index} className="alert-item font">
-                                    EURCAD
-                                    <span className="timeframe">
-                ({item}M)
-                <br/>
-                Called At (Price): 1.5628
-                <br/>
-                <strong>Time (UTC): 2021-01-04 15:30:01 </strong>
-                <br/>
-                <strong>Time (Local): </strong>
-                2021-01-04 09:00:01
-                <br/>
-                Time Passed (Min): 1 hour and 0 minutes.
-                <br/>
-              </span>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
+function RightSidebar() {
+  const data = [1, 2, 3];
+  return (
+    <div className="navbar-expand-md">
+      <button
+        className="navbar-toggler btn-menu-toggle"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+      >
+        <i className="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div className="side-menu-right overflow-auto">
+          <div className="flex bg-white justify-center flex-col">
+            <div className="flex justify-center ">
+              <button className="mt-2 alert-btn">
+                <img src="https://delorean.im/core/img/wanew-alertpanel.png" alt="" />
+              </button>
             </div>
+            <div className="m-3 mt-7">
+              {data.map((item, index) => (
+                <div key={index} className="alert-item font">
+                  EURCAD
+                  <span className="timeframe">
+                    ({item}M)
+                    <br />
+                    Called At (Price): 1.5628
+                    <br />
+                    <strong>Time (UTC): 2021-01-04 15:30:01 </strong>
+                    <br />
+                    <strong>Time (Local): </strong>
+                    2021-01-04 09:00:01
+                    <br />
+                    Time Passed (Min): 1 hour and 0 minutes.
+                    <br />
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-
-    );
+      </div>
+    </div>
+  );
 }
 
 export default RightSidebar;
