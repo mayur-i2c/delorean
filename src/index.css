@@ -130,5 +130,7 @@ code {
   .dashboard-img {
     width: 100%;
   }
-
+  .font-username {
+    font-size: 9px;
+  }
 }

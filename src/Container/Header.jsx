@@ -33,12 +33,12 @@ function Header() {
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <div className="ml-3 relative flex items-center">
-              <i className="fa fa-question-circle ml-3" style={{ fontSize: "25px" }} aria-hidden="true" />
-              <i className="fa fa-calculator ml-3" style={{ fontSize: "25px" }} aria-hidden="true" />
-              <i className="fas fa-bell ml-3" style={{ fontSize: "25px" }} />
-              <i className="fas fa-ellipsis-v ml-3" style={{ fontSize: "25px" }} />
-              <i className="fas fa-sign-out-alt ml-3" style={{ fontSize: "25px" }} />
-              <div className="mx-2 ml-3 flex items-center">
+              <i className="fa fa-question-circle ml-4" style={{ fontSize: "25px" }} aria-hidden="true" />
+              <i className="fa fa-calculator ml-4" style={{ fontSize: "25px" }} aria-hidden="true" />
+              <i className="fas fa-bell ml-4" style={{ fontSize: "25px" }} />
+              <i className="fas fa-ellipsis-v ml-4" style={{ fontSize: "25px" }} />
+              <i className="fas fa-sign-out-alt ml-4" style={{ fontSize: "25px" }} />
+              <div className="mx-2 ml-4 flex items-center">
                 <button className="bg-gray-800 text-sm rounded-full" id="user-menu" aria-haspopup="true">
                   <img
                     className="h-8 w-8 rounded-full"
@@ -46,7 +46,7 @@ function Header() {
                     alt=""
                   />
                 </button>
-                <span className="ml-2">User Name</span>
+                <span className="ml-2 font-username">User Name</span>
               </div>
             </div>
           </div>
