@@ -55,20 +55,20 @@ function LeftSidebar() {
     <div className="side-menu-left">
       <div id="tray">
         <div className="section-1 tray-products flex items-center flex-col">
-          <Link onClick={() => openLink("http://im.center")}>
-            <img src="https://delorean.im/core/img/academyNEW2.png" />
+          <Link onClick={() => openLink("http://im.center")} to="">
+            <img src="https://delorean.im/core/img/academyNEW2.png"  alt=""/>
           </Link>
-          <Link onClick={() => openLink("http://im.center")}>
-            <img src="https://delorean.im/core/img/piptalkNEW.png" />
+          <Link onClick={() => openLink("http://im.center")} to="">
+            <img src="https://delorean.im/core/img/piptalkNEW.png" alt="" />
           </Link>
-          <Link onClick={() => openLink("http://im.center")}>
-            <img id="signal_Button" src="https://delorean.im/core/img/lightbulbTEST.png" />
+          <Link onClick={() => openLink("http://im.center")} to="">
+            <img id="signal_Button" src="https://delorean.im/core/img/lightbulbTEST.png"  alt="" />
           </Link>
         </div>
         <div className="section-2 tray-products flex items-center flex-col">
           {section2.map(({ img, link }) => (
-            <Link onClick={() => openLink(link)} className="tray-products">
-              <img src={img} />
+            <Link onClick={() => openLink(link)} className="tray-products" to="">
+              <img src={img}  alt=""/>
             </Link>
           ))}
         </div>
