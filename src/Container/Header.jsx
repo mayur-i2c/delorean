@@ -51,7 +51,7 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className="bg-gray-200 mx-3 mb-3 px-5 relative flex items-center justify-between">
+        <div className="bg-gray-200 mx-3 mb-3 px-5 relative flex items-center justify-between app-banner">
           <div>
             <h1 className="logo-Font">Delorean</h1>
           </div>
@@ -61,7 +61,7 @@ function Header() {
           <div className="flex items-center ">
             <span>go</span>
             <strong>LIVE</strong>
-            {/* <img className="ml-2" src="https://delorean.im/core/img/wanew-headervideos.png" alt="no" /> */}
+            <img className="ml-2" src="https://delorean.im/core/img/wanew-headervideos.png" alt="no" />
           </div>
         </div>
       </div>

@@ -106,7 +106,9 @@ code {
   font-size: 11pt;
   color: #829391;
 }
-
+.dashboard-img {
+  width: 72%;
+}
 /* Use a media query to add a breakpoint at 620px For mobile phones: */
 @media only screen and (max-width: 640px) {
   .side-menu-right {
@@ -118,6 +120,15 @@ code {
     font-size: 20pt;
   }
   .alert-btn {
-    margin-left: -35%;
+    margin-left: -23%;
   }
+  .app-banner {
+    flex-direction: column;
+    margin-left: 2em !important;
+    min-height: 130px;
+  }
+  .dashboard-img {
+    width: 100%;
+  }
+
 }
