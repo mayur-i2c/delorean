@@ -1,11 +1,12 @@
 import React from "react";
 
-export default () => {
+function Dashboard() {
   return (
-    <div className="">
-      <div style={{ height: "90vh", background: " linear-gradient(to right, #4568dc, #b06ab3)" }}>
-        {/* <img src="https://i.imgur.com/itts48F.png" /> */}
-      </div>
+    <div style={{ background: "red", height: "95vh" }}>
+      {/* <img src="https://i.imgur.com/itts48F.png" /> */}
+      {/* <h1>hello</h1> */}
     </div>
   );
-};
+}
+
+export default Dashboard;

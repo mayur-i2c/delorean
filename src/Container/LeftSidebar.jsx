@@ -62,7 +62,7 @@ function LeftSidebar() {
   };
 
   return (
-    <div className="side-menu-left">
+    <div className="flex">
       <div id="tray">
         <div className="section-1 tray-products flex items-center flex-col">
           <Link onClick={() => openLink("http://im.center")} to="">
@@ -75,18 +75,27 @@ function LeftSidebar() {
             <img id="signal_Button" src="https://delorean.im/core/img/lightbulbTEST.png" alt="" />
           </Link>
         </div>
-        <div className="section-2 tray-products flex items-center flex-col">
-          {section2.map(({ img, link }) => (
-            <Link onClick={() => openLink(link)} className="tray-products" to="">
+        <hr
+          style={{
+            marginTop: "1rem",
+            marginBottom: "1rem",
+            border: 0,
+            borderTop: "1px solid rgba(0,0,0,.1)",
+          }}
+        />
+
+        <div className="section-2 tray-products flex items-center bor flex-col">
+          {section2.map(({ img, link }, index) => (
+            <Link key={index} onClick={() => openLink(link)} className="tray-products" to="">
               <img src={img} alt="" />
             </Link>
           ))}
         </div>
       </div>
-      <div className="drawingToolbar">
+      <div id="drawingToolbar">
         <div className="drawingToolbar-inner flex items-center flex-col">
-          {drawingToolbar.map(({ childMenu, icon }) => (
-            <div className="drawingToolbar-item dropdown m-0.5">
+          {drawingToolbar.map(({ childMenu, icon }, index) => (
+            <div key={index} className="drawingToolbar-item dropdown ">
               {childMenu.length ? (
                 <Dropdown
                   trigger={["hover", "click"]}

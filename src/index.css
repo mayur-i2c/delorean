@@ -10,13 +10,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.side-menu-left {
-  display: flex;
-  position: absolute;
-  left: 0;
-  top: 1px;
-  height: 100%;
-}
 .main-nav-container {
   margin-left: 25px;
 }
@@ -37,8 +30,7 @@ code {
 }
 .side-menu-right {
   position: absolute;
-  right: 0;
-  top: 1px;
+  margin-left: -10px;
   height: 90vh;
   background: white;
   width: 320px;
@@ -61,6 +53,8 @@ code {
   border-radius: 3px;
   margin-bottom: 6px;
   cursor: pointer;
+  width: 34px;
+  height: 34px;
 }
 
 #tray .section-1 {
@@ -71,12 +65,15 @@ code {
   padding: 5px;
 }
 
-.drawingToolbar {
+#drawingToolbar {
   display: flex;
   border-right: 2px solid #d9dadb;
   padding: 10px;
 }
-
+.drawingToolbar-item.dropdown {
+  margin: 3px;
+  margin-bottom: 6px;
+}
 .alert-item {
   margin-bottom: 10px;
   border-left: 3px solid gray;
@@ -141,33 +138,51 @@ code {
   top: 10px;
   position: absolute;
 }
-
+.right-side-row {
+  margin-left: 4px;
+}
+.main-content-row {
+  margin-left: -2%;
+}
+.left-side-row {
+  height: 90vh;
+  max-width: 13%;
+}
 /* Use a media query to add a breakpoint at 768px For mobile phones: */
 @media only screen and (max-width: 768px) {
   .logo-Font {
     font-size: 20pt;
   }
+  .dashboard-img {
+    width: 100%;
+  }
+
   .side-menu-right {
     position: relative;
     width: 100%;
-    margin-left: 17%;
-    height: 195px;
-    overflow: auto !important;
-    height: 210px;
+    margin-left: 10px;
   }
-  .alert-btn {
-    display: none !important;
+  .main-content-row {
+    margin-left: 0;
   }
+  .left-side-row {
+    height: 60vh;
+    max-width: inherit;
+  }
+  .right-side-row {
+    margin-left: 0px;
+  }
+
   .app-banner {
     display: none !important;
   }
   #tray {
     display: none !important;
   }
-  .dashboard-img {
-    width: 100%;
-  }
 
+  .alert-btn {
+    display: none !important;
+  }
   .font-username {
     font-size: 9px;
   }
@@ -206,9 +221,6 @@ code {
 
   .sm-con {
     margin-top: 2px !important;
-  }
-  .main-nav-container {
-    margin-left: 20px;
   }
 }
 

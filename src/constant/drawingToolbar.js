@@ -1,4 +1,4 @@
-export default [
+const drawingToolbarArr = [
   {
     childMenu: [
       {
@@ -279,3 +279,5 @@ export default [
     ),
   },
 ];
+
+export default drawingToolbarArr;

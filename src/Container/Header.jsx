@@ -46,7 +46,7 @@ function Header() {
                 animation="slide-up"
                 onVisibleChange={onVisibleChange}
               >
-                <button className="navBar-dropdown-btn">Strategies</button>
+                <button className="navBar-dropdown-btn uppercase">Strategies</button>
               </Dropdown>
 
               <Dropdown
@@ -55,7 +55,7 @@ function Header() {
                 animation="slide-up"
                 onVisibleChange={onVisibleChange}
               >
-                <button className="navBar-dropdown-btn">Training</button>
+                <button className="navBar-dropdown-btn uppercase">Training</button>
               </Dropdown>
               <Dropdown
                 trigger={["hover", "click"]}
@@ -63,7 +63,7 @@ function Header() {
                 animation="slide-up"
                 onVisibleChange={onVisibleChange}
               >
-                <button className="navBar-dropdown-btn">Help</button>
+                <button className="navBar-dropdown-btn uppercase">Help</button>
               </Dropdown>
             </div>
           </div>
