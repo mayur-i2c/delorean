@@ -172,7 +172,7 @@ code {
   color: #000 !important;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   -webkit-appearance: none;
 }
 
@@ -193,7 +193,7 @@ code {
 ::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: #ffffff;
-}
+} */
 
 /* Use a media query to add a breakpoint at 768px For mobile phones: */
 @media only screen and (max-width: 768px) {
@@ -208,6 +208,7 @@ code {
     position: relative;
     width: 100%;
     margin-left: 10px;
+    height: 40vh;
   }
   .main-content-row {
     margin-left: 0;
