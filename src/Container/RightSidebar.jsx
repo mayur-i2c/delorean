@@ -13,7 +13,11 @@ function RightSidebar() {
         </div>
         <div className="m-3 mt-7">
           {data.map((item, index) => (
-            <div key={index} className="alert-item font">
+            <div
+              key={index}
+              style={{ borderLeftColor: index % 2 === 0 ? "#abe64d" : "#F94340" }}
+              className="alert-item font"
+            >
               EURCAD
               <span className="timeframe">
                 ({item}M)

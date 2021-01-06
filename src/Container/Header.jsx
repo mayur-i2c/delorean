@@ -1,7 +1,7 @@
 import React from "react";
 import Dropdown from "rc-dropdown";
 import Menu, { Item as MenuItem } from "rc-menu";
-
+import { isBrowser } from "react-device-detect";
 function onSelect({ key }) {
   console.log(`${key} selected`);
 }
@@ -34,14 +34,20 @@ function Header() {
   return (
     <nav className="flex relative items-center border-solid">
       <div>
-        <img className="ml-3 header-logo" height="60px" width="60px" src="https://delorean.im/core/img/imlogo.png" alt="Workflow" />
+        <img
+          className="ml-3 header-logo"
+          height="60px"
+          width="60px"
+          src="https://delorean.im/core/img/imlogo.png"
+          alt="Workflow"
+        />
       </div>
       <div className="w-full main-nav-container">
         <div className="relative main-nav flex items-center justify-between">
           <div className="left-side-header lg:flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex">
               <Dropdown
-                trigger={["hover", "click"]}
+                trigger={["click", isBrowser && "hover"]}
                 overlay={strategiesMenu}
                 animation="slide-up"
                 onVisibleChange={onVisibleChange}
@@ -50,7 +56,7 @@ function Header() {
               </Dropdown>
 
               <Dropdown
-                trigger={["hover", "click"]}
+                trigger={["click", isBrowser && "hover"]}
                 overlay={trainingMenu}
                 animation="slide-up"
                 onVisibleChange={onVisibleChange}
@@ -58,7 +64,7 @@ function Header() {
                 <button className="navBar-dropdown-btn uppercase">Training</button>
               </Dropdown>
               <Dropdown
-                trigger={["hover", "click"]}
+                trigger={["click", isBrowser && "hover"]}
                 overlay={helpMenu}
                 animation="slide-up"
                 onVisibleChange={onVisibleChange}

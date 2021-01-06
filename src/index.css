@@ -76,7 +76,7 @@ code {
 }
 .alert-item {
   margin-bottom: 10px;
-  border-left: 3px solid gray;
+  border-left: 5px solid gray;
   padding-left: 5px;
 }
 
@@ -148,6 +148,53 @@ code {
   height: 90vh;
   max-width: 13%;
 }
+
+.navBar-dropdown-btn {
+  display: block;
+  text-decoration: none;
+  padding: 5px 15px;
+  color: #000;
+  font-family: "Montserrat";
+}
+.navBar-dropdown-btn:hover {
+  background: #ddd;
+}
+.navBar-dropdown-item {
+  background: #ddd !important;
+  color: #000 !important;
+  width: 320px !important;
+  padding: 8px 15px !important;
+  font-family: "Montserrat" !important;
+  font-size: 11pt !important;
+}
+.navBar-dropdown-item:hover {
+  background-color: #00af9b !important;
+  color: #000 !important;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 6px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
 /* Use a media query to add a breakpoint at 768px For mobile phones: */
 @media only screen and (max-width: 768px) {
   .logo-Font {
@@ -222,27 +269,4 @@ code {
   .sm-con {
     margin-top: 2px !important;
   }
-}
-
-.navBar-dropdown-btn {
-  display: block;
-  text-decoration: none;
-  padding: 5px 15px;
-  color: #000;
-  font-family: "Montserrat";
-}
-.navBar-dropdown-btn:hover {
-  background: #ddd;
-}
-.navBar-dropdown-item {
-  background: #ddd !important;
-  color: #000 !important;
-  width: 320px !important;
-  padding: 8px 15px !important;
-  font-family: "Montserrat" !important;
-  font-size: 11pt !important;
-}
-.navBar-dropdown-item:hover {
-  background-color: #00af9b !important;
-  color: #000 !important;
 }

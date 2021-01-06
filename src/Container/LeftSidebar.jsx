@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "rc-dropdown";
 import Menu, { Item as MenuItem } from "rc-menu";
+import { isBrowser } from "react-device-detect";
 
 import drawingToolbar from "../constant/drawingToolbar";
 
@@ -98,7 +99,8 @@ function LeftSidebar() {
             <div key={index} className="drawingToolbar-item dropdown ">
               {childMenu.length ? (
                 <Dropdown
-                  trigger={["hover", "click"]}
+                trigger={["click", isBrowser && "hover"]}
+                // trigger={["hover", "click"]}
                   overlay={() => (
                     <Menu className="dropdown-content text-gray-700 pt-1" onSelect={onSelect}>
                       {childMenu.map(({ icon, name }) => (
