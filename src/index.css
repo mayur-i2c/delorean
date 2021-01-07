@@ -30,13 +30,12 @@ code {
 }
 .side-menu-right {
   position: absolute;
-  margin-left: -10px;
-  height: 90vh;
   background: white;
-  width: 320px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: 315px;
 }
-
+.alert-container {
+  height: 80vh;
+}
 .logo-Font {
   font-family: "Days One", sans-serif;
   color: #3e304e;
@@ -139,7 +138,7 @@ code {
   position: absolute;
 }
 .right-side-row {
-  margin-left: 4px;
+  margin-left: -10px;
 }
 .main-content-row {
   margin-left: -2%;
@@ -207,7 +206,12 @@ code {
   .side-menu-right {
     position: relative;
     width: 100%;
-    margin-left: 10px;
+  }
+  .right-side-row {
+    margin-left: 1.2em;
+    margin-top: 0.5em;
+  }
+  .alert-container {
     height: 40vh;
   }
   .main-content-row {
@@ -216,9 +220,6 @@ code {
   .left-side-row {
     height: 60vh;
     max-width: inherit;
-  }
-  .right-side-row {
-    margin-left: 0px;
   }
 
   .app-banner {

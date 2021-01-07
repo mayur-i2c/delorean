@@ -4,19 +4,19 @@ function RightSidebar() {
   const data = [1, 2, 3, 4, 5, 6];
 
   return (
-    <div className="side-menu-right overflow-auto">
+    <div className="side-menu-right ">
       <div className="flex justify-center flex-col">
         <div className="flex justify-center alert-btn">
-          <button className="mt-2 ">
+          <button className="my-3">
             <img src="https://delorean.im/core/img/wanew-alertpanel.png" alt="" />
           </button>
         </div>
-        <div className="m-3 mt-7">
+        <div className="alert-container overflow-auto">
           {data.map((item, index) => (
             <div
               key={index}
               style={{ borderLeftColor: index % 2 === 0 ? "#abe64d" : "#F94340" }}
-              className="alert-item font"
+              className="alert-item font font-weight-bold"
             >
               EURCAD
               <span className="timeframe">
